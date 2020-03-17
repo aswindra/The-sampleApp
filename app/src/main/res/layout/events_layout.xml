@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/boardspace_text_grey"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="240dp"
+        android:layout_height="210dp"
+        android:background="@drawable/lay_back"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="220dp"
+            android:layout_height="130dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignLeft="@+id/linear"
+            android:layout_alignStart="@+id/linear">
+
+            <ImageView
+                android:id="@+id/event_image"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_below="@+id/event_tit"
+                android:layout_marginTop="28dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/alum_chap_tags"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/sample_app_img" />
+
+            <TextView
+                android:id="@+id/event_tit"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toEndOf="@+id/alum_chap_tags"
+                android:layout_toRightOf="@+id/alum_chap_tags"
+                android:background="@color/transparent"
+                android:maxLines="3"
+                android:padding="4dp"
+                android:layout_marginRight="10dp"
+                android:text="Medium Text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/alum_chap_tags"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textView2"
+                android:layout_toRightOf="@+id/textView2"
+                android:text="TextView"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/alum_chap"
+                android:layout_marginLeft="10dp"
+                android:text="Posted By: "
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/alum_chap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:text="TextView"
+                android:textColor="#FF6C00"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView2"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:background="#E0FFFF"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:id="@+id/leftLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="8dp">
+
+                    <TextView
+                        android:id="@+id/textView3Below"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="Views: "
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/evnt_news_vw"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/textView3Below"
+                        android:text="2          "
+                        android:textColor="#3AAFDA"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rightLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:paddingBottom="8dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="8dp">
+
+                    <TextView
+                        android:id="@+id/commentCountnew"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/commentBlueImage"
+                        android:text="120"
+                        android:textColor="#3FB980"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/commentBlueImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Comments: "
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/centerLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/like_grey"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Likes: "
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/evnt_news_likes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/like_grey"
+                        android:text="220"
+                        android:textColor="#E25C5A"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+            <!--
+                    <Button
+                        android:id="@+id/evnt_news_like"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_alignLeft="@+id/textView2"
+                        android:layout_below="@+id/relativeLayout2"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:visibility="gone"
+
+                        android:background="@mipmap/like" />
+            -->
+
+            <Button
+                android:id="@+id/evnt_news_cmt"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="4dp"
+                android:background="@mipmap/back"
+                android:visibility="gone" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="1dp"
+                android:layout_height="10dp"
+                android:layout_below="@+id/evt_view_mr"
+                android:layout_weight="1"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:id="@+id/evt_view_mr"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/evnt_news_cmt"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/round_bg_red"
+                android:gravity="center"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="View More"
+                android:textColor="#fff"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="88dp"
+                android:layout_height="35dp"
+                android:layout_alignTop="@+id/evnt_news_cmt"
+                android:layout_marginLeft="4dp"
+                android:layout_toEndOf="@+id/evnt_news_cmt"
+                android:layout_toRightOf="@+id/evnt_news_cmt"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/event_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/alum_chap_tags"
+                android:layout_marginLeft="6dp"
+                android:layout_toEndOf="@+id/imageView2"
+                android:layout_toRightOf="@+id/imageView2"
+                android:text="23 JUN"
+                android:layout_marginTop="10dp"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@mipmap/d_calendar" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/relativeLayout2"
+            android:id="@+id/linear"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+
+            android:weightSum="1">
+            <TextView
+                android:id="@+id/alum_news_det"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginRight="5dp"
+                android:text="Venue:  "
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/event_venue"
+                android:text="gfdsgdfgdf"
+                android:textColor="@color/black"
+                android:singleLine="true"
+                android:layout_marginRight="10dp"
+                android:textSize="10sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear"
+            android:id="@+id/lin"
+            android:layout_marginLeft="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="location:  "
+                android:textSize="10sp"
+                android:textColor="@color/black"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="coimbatore"
+                android:textColor="@color/black"
+                android:singleLine="true"
+                android:layout_marginRight="10dp"
+                android:textSize="10sp"
+                android:id="@+id/eventLoc" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lin"
+            android:id="@+id/check_details"
+            android:text="Check Details"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textSize="12sp"
+            android:background="@drawable/rectangle_bg"
+            android:layout_centerInParent="true"
+            android:textColor="@color/dark_grey"
+            android:gravity="center"/>
+    </RelativeLayout>
+</RelativeLayout>

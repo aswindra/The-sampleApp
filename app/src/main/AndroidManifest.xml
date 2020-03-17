@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sampleapp">
+    <!-- Step 1: Add the following permission to the app  -->
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+
+    <!-- Step 2: This permission is depreciated in Android P  -->
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/phone"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Basics.LoginScreen"/>
+        <activity android:name=".Basics.RegisterScreen"/>
+        <activity android:name=".Basics.HomeActivity"/>
+        <activity android:name=".SubActivities.MyProfile_Activity"/>
+        <activity android:name=".SubActivities.Branches_Activity"/>
+        <activity android:name=".SubActivities.Branch_Activity_v2"/>
+        <activity android:name=".SubActivities.Admin_Activity"/>
+        <activity android:name=".SubActivities.Branch_Activity"/>
+        <activity android:name=".SubActivities.Store_Details_Activity"/>
+        <activity android:name=".SubActivities.Event_Details_Activity"/>
+        <activity android:name=".SubActivities.Status_Activity"/>
+        <activity android:name=".SubActivities.MoreDetails_Activty"/>
+        <activity android:name=".Basics.Authentication_Activity"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<shape xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/listview_background_shape">-->
+<!--&lt;!&ndash;<stroke android:width="0.5dp" android:color="#382b2b2b" />&ndash;&gt;-->
+<!--<stroke android:width="0.5dp" android:color="#61000000" />-->
+<!--<padding android:left="0.5dp"-->
+<!--android:top="0.5dp"-->
+<!--android:right="0.5dp"-->
+<!--android:bottom="0.5dp" />-->
+<!--<corners android:radius="5dp" />-->
+<!--<solid android:color="#ffffff" />-->
+<!--</shape>-->
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!--Shadow Code (Experiment)-->
+    <item >
+        <shape
+            android:shape="rectangle">
+            <!--<solid android:color="@android:color/darker_gray" />-->
+            <solid android:color="#61000000" />
+            <corners android:radius="5dp"/>
+        </shape>
+    </item>
+    <item android:right="1dp" android:left="1dp" android:bottom="2dp">
+        <shape
+            android:shape="rectangle">
+            <solid android:color="@android:color/white"/>
+            <corners android:radius="5dp"/>
+        </shape>
+    </item>
+
+
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/listview_background_shape">
+            <!--<stroke android:width="0.5dp" android:color="#382b2b2b" />-->
+            <stroke android:width="0.5dp" android:color="#61000000" />
+            <padding android:left="0.5dp"
+                android:top="0.5dp"
+                android:right="0.5dp"
+                android:bottom="0.5dp" />
+            <corners android:radius="5dp" />
+            <solid android:color="#ffffff" />
+        </shape>
+    </item>
+</layer-list>
